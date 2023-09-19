@@ -1,0 +1,14 @@
+{
+  "name": "api-documentation",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Pyry Rouvila <pyry@opencrvs.org>",
+  "scripts": {
+    "fetch-schema": "wget https://raw.githubusercontent.com/opencrvs/opencrvs-core/develop/packages/gateway/src/graphql/schema.graphql -O schema.graphql",
+    "build": "npm run fetch-schema && spectaql config.yml"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "spectaql": "^2.3.0"
+  }
+}

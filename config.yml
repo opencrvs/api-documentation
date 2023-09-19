@@ -1,0 +1,6 @@
+spectaql:
+  targetDir: public
+introspection:
+  schemaFile: schema.graphql
+info:
+  x-url: http://localhost:7070/graphql
