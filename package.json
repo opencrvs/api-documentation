@@ -6,7 +6,8 @@
   "scripts": {
     "fetch-schema": "wget https://raw.githubusercontent.com/opencrvs/opencrvs-core/develop/packages/gateway/src/graphql/schema.graphql -O schema.graphql",
     "build-docs": "spectaql config.yml",
-    "build": "npm run fetch-schema && npm run build-docs"
+    "build": "npm run fetch-schema && npm run build-docs",
+    "start": "spectaql -d config.yml"
   },
   "license": "ISC",
   "dependencies": {
