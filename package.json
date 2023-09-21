@@ -4,13 +4,14 @@
   "description": "",
   "author": "Pyry Rouvila <pyry@opencrvs.org>",
   "scripts": {
-    "fetch-schema": "wget https://raw.githubusercontent.com/opencrvs/opencrvs-core/develop/packages/gateway/src/graphql/schema.graphql -O schema.graphql",
-    "build-docs": "spectaql config.yml",
-    "build": "npm run fetch-schema && npm run build-docs",
+    "fetch-schema": "curl https://raw.githubusercontent.com/opencrvs/opencrvs-core/develop/packages/gateway/src/graphql/schema.graphql -O",
+    "build-graphql-docs": "spectaql config.yml",
+    "build": "npm run fetch-schema && npm run build-graphql-docs",
     "start": "spectaql -d config.yml"
   },
   "license": "ISC",
   "dependencies": {
-    "spectaql": "^2.3.0"
+    "spectaql": "^2.3.0",
+    "swagger-ui-dist": "^5.7.2"
   }
 }

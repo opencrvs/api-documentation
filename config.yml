@@ -1,5 +1,5 @@
 spectaql:
-  targetDir: public
+  targetDir: public/graphql
 introspection:
   schemaFile: schema.graphql
 servers:
