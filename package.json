@@ -11,7 +11,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "spectaql": "^2.3.0",
+    "spectaql": "^3.0.0",
     "swagger-ui-dist": "^5.7.2"
   }
 }
